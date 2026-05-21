@@ -983,3 +983,47 @@ section {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+/* =========================
+   Theme Button
+========================= */
+.theme-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    background: #4f46e5;
+    color: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+/* =========================
+   Dark Theme
+========================= */
+body.dark-theme {
+    background: #0f172a;
+    color: white;
+}
+
+body.dark-theme .navbar,
+body.dark-theme .about,
+body.dark-theme .projects,
+body.dark-theme .skills,
+body.dark-theme .contact {
+    background: #111827;
+}
+
+body.dark-theme .project-card,
+body.dark-theme .skill-card {
+    background: #1e293b;
+    color: white;
+}
+
+body.dark-theme p {
+    color: #cbd5e1;
+}
