@@ -996,7 +996,7 @@ section {
     border-radius: 50%;
     cursor: pointer;
     font-size: 20px;
-  background: #ec4899;
+ background: linear-gradient(135deg, #8b5cf6, #ec4899);
     color: white;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     z-index: 1000;
