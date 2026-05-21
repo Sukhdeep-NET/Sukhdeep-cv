@@ -996,7 +996,7 @@ section {
     border-radius: 50%;
     cursor: pointer;
     font-size: 20px;
-    background: #4f46e5;
+  background: #ec4899;
     color: white;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     z-index: 1000;
