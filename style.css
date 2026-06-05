@@ -1,7 +1,6 @@
 /* =============================================
    Sukhdeep Kambo Portfolio — Light Theme
    ============================================= */
-pro
 :root {
     --blue: #3b82f6;
     --blue-dark: #2563eb;
@@ -273,20 +272,31 @@ img {
     width: 380px;
     height: 380px;
     border-radius: 50%;
-    overflow: hidden;
-    border: 3px solid rgba(59, 130, 246, 0.3);
+    border: 2px solid rgba(59, 130, 246, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(219, 234, 254, 0.6), rgba(224, 215, 255, 0.4), rgba(191, 219, 254, 0.3));
     position: relative;
+    animation: circleFloat 6s ease-in-out infinite;
 }
 
-.profile-photo {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: 8% 15%;
+.circle-inner {
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    transform: scale(1.03);
-   
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(147, 130, 255, 0.2));
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.circle-inner i {
+    font-size: 4rem;
+    color: var(--blue);
+    opacity: 0.6;
+}
+
 @keyframes circleFloat {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-15px); }
@@ -383,21 +393,6 @@ section {
 /* =============================================
    ABOUT
    ============================================= */
-
-/* About Image */
-.about-image {
-    width: 420px;
-    height: 420px;
-    border-radius: 20px;
-    overflow: hidden;
-}
-
-.about-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
 .about {
     display: flex;
     align-items: center;
@@ -515,40 +510,7 @@ section {
 .project-card .btn {
     margin: 0 20px 20px;
 }
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 25px;
-}
 
-.project-card {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    padding: 20px;
-    border-radius: 15px;
-
-}
-
-.project-card p {
-    flex-grow: 1;
-    line-height: 1.6;
-}
-
-/* Button always bottom */
-.project-card .btn {
-    margin-top: auto;
-    align-self: flex-start;
-}
-.project-card p {
-    min-height: 100px;
-}
-.project-card p {
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-}
 /* =============================================
    EXPERIENCE
    ============================================= */
@@ -971,48 +933,4 @@ section {
     .skills-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-}
-/* =========================
-   Theme Button
-========================= */
-.theme-btn {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 20px;
- background: linear-gradient(135deg, #8b5cf6, #ec4899);
-    color: white;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    z-index: 1000;
-}
-
-/* =========================
-   Dark Theme
-========================= */
-body.dark-theme {
-    background: #0f172a;
-    color: white;
-}
-
-body.dark-theme .navbar,
-body.dark-theme .about,
-body.dark-theme .projects,
-body.dark-theme .skills,
-body.dark-theme .contact {
-    background: #111827;
-}
-
-body.dark-theme .project-card,
-body.dark-theme .skill-card {
-    background: #1e293b;
-    color: white;
-}
-
-body.dark-theme p {
-    color: #cbd5e1;
 }
