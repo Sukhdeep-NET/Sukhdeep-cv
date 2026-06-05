@@ -285,8 +285,8 @@ img {
     object-position: 8% 15%;
     border-radius: 50%;
     transform: scale(1.03);
+   
 }
-object-position: 0% 15%;
 @keyframes circleFloat {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-15px); }
