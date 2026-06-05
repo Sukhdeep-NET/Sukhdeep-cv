@@ -273,30 +273,30 @@ img {
     width: 380px;
     height: 380px;
     border-radius: 50%;
-    border: 2px solid rgba(59, 130, 246, 0.2);
+    overflow: hidden;
+    border: 3px solid rgba(59, 130, 246, 0.3);
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, rgba(219, 234, 254, 0.6), rgba(224, 215, 255, 0.4), rgba(191, 219, 254, 0.3));
+    background: linear-gradient(
+        135deg,
+        rgba(219, 234, 254, 0.6),
+        rgba(224, 215, 255, 0.4),
+        rgba(191, 219, 254, 0.3)
+    );
     position: relative;
     animation: circleFloat 6s ease-in-out infinite;
+    box-shadow: 0 10px 40px rgba(59, 130, 246, 0.2);
 }
 
-.circle-inner {
-    width: 200px;
-    height: 200px;
+.profile-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 50%;
-    background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(147, 130, 255, 0.2));
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
 }
 
-.circle-inner i {
-    font-size: 4rem;
-    color: var(--blue);
-    opacity: 0.6;
-}
 
 @keyframes circleFloat {
     0%, 100% { transform: translateY(0); }
