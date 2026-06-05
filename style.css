@@ -293,12 +293,12 @@ img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center top;
+    object-position: 45% top;
     border-radius: 50%;
-    transform: scale(1.15);
+    transform: scale(1.08);
 }
 
-object-position: center 20%;
+object-position: 40% top;
 @keyframes circleFloat {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-15px); }
