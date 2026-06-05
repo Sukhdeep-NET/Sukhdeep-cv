@@ -1,7 +1,7 @@
 /* =============================================
    Sukhdeep Kambo Portfolio — Light Theme
    ============================================= */
-
+pro
 :root {
     --blue: #3b82f6;
     --blue-dark: #2563eb;
@@ -282,7 +282,7 @@ img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: 18% 15%;
+    object-position: 8% 15%;
     border-radius: 50%;
     transform: scale(1.03);
 }
