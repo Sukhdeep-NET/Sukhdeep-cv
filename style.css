@@ -1034,8 +1034,12 @@ body.dark-theme p {
     color: #cbd5e1;
 }
 .testimonials {
-    padding: 40px 8%; /* 100px se 40px kar diya */
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 2%;
 }
+
 
 .testimonials-grid {
     display: grid;
