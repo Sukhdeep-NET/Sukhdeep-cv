@@ -1096,15 +1096,14 @@ body.dark-theme p {
 }
 .testimonial-card {
     padding: 0;
-    border: none;
-    background: transparent;
-    box-shadow: none;
     overflow: hidden;
+    border-radius: 10px;
 }
 
 .review-image {
     width: 100%;
-    height: auto;
+    height: 100%;
+    min-height: 250px;
+    object-fit: cover;
     display: block;
-    border-radius: 10px;
 }
