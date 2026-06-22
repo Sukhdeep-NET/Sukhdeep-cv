@@ -1101,8 +1101,8 @@ body.dark-theme p {
 }
 
 .review-image {
-    width: 120%;
-    height: 250%;
+    width: 100%;
+    height: 100%;
     object-fit: contain;
     display: block;
 }
