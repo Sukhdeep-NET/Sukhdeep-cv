@@ -1094,3 +1094,17 @@ body.dark-theme p {
     color: #aaa;
     font-size: 14px;
 }
+.testimonial-card {
+    padding: 0;
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    overflow: hidden;
+}
+
+.review-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
