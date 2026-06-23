@@ -1024,12 +1024,14 @@ body.dark-theme .navbar,
 body.dark-theme .about,
 body.dark-theme .projects,
 body.dark-theme .skills,
-body.dark-theme .contact {
+body.dark-theme .contact,
+body.dark-theme .testimonials {
     background: #111827;
 }
 
 body.dark-theme .project-card,
-body.dark-theme .skill-card {
+body.dark-theme .skill-card,
+body.dark-theme .testimonial-card {
     background: #1e293b;
     color: white;
 }
@@ -1041,6 +1043,10 @@ body.dark-theme p {
 /* =============================================
    TESTIMONIALS
    ============================================= */
+.testimonials {
+    background: var(--bg-white);
+}
+
 .testimonials-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1055,7 +1061,7 @@ body.dark-theme p {
     padding: 8px;
     overflow: hidden;
 
-    /* Sab cards same size */
+    /* All cards same size */
     height: 320px;
 
     display: flex;
@@ -1066,7 +1072,7 @@ body.dark-theme p {
 .review-image {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* Image cut nahi hogi */
+    object-fit: contain; /* Preserve full image without cropping */
     display: block;
 }
 
