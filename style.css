@@ -968,6 +968,10 @@ section {
     .skills-grid {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1033,18 +1037,14 @@ body.dark-theme .skill-card {
 body.dark-theme p {
     color: #cbd5e1;
 }
-.testimonials {
-    width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 40px 2%;
-}
 
-
+/* =============================================
+   TESTIMONIALS
+   ============================================= */
 .testimonials-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 24px;
     margin-top: 20px;
 }
 
@@ -1069,12 +1069,8 @@ body.dark-theme p {
     object-fit: contain; /* Image cut nahi hogi */
     display: block;
 }
-    object-fit: contain;
-}
-.experience,
-.testimonials {
-    max-width: 1200px;  
-    margin: 0 auto;
-    padding: 0 20px;    
-    width: 100%;
-}
+
+/* .experience and .testimonials both inherit width/padding/max-width
+   from the generic "section" rule above (max-width: 1200px; padding: 80px 40px;
+   margin: 0 auto;) — no extra overrides needed, this keeps both sections
+   perfectly aligned on the same left/right edges. */
